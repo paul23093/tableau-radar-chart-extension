@@ -1,0 +1,57 @@
+body {
+  font-size: 12px;
+  font-family: "Benton Sans", Arial, Helvetica, sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+  overflow:hidden;
+}
+
+.settings {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.settings .block {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+}
+
+.settings .block select {
+  outline: none;
+}
+
+.buttons {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.buttons .button button {
+  margin: 4px 10px;
+  padding: 5px 10px;
+  background-color: rgba(200, 200, 200, .5);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  user-select: none;
+}
+
+.buttons .button button:hover {
+  background-color: rgba(200, 200, 200, .8);
+}
+
+.buttons .button .tooltip {
+  display: flex;
+  font-size: 7pt;
+  align-items: center;
+  justify-content: center;
+}

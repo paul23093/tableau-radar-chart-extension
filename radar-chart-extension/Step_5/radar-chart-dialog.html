@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="data:,">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="common.css" />
+  <title>Radar Chart</title>
+  <script type="module" src="/Step_5/tableau.extensions.1.latest.js"></script>
+
+</head>
+<body>
+  <div id="form" class="settings">
+    <div class="block">
+      <div class="block_title">
+        Enter a Labels font size:
+      </div>
+      <select id="labels-font-size" type="number">
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+      </select>
+    </div>
+    <div class="block">
+      <div class="block_title">
+        Enter a Values font size:
+      </div>
+      <select id="values-font-size" type="number">
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+      </select>
+    </div>
+    <div class="buttons">
+      <div class="button">
+        <button id="apply" type="submit">Apply</button>
+        <div class="tooltip">Enter</div>
+      </div>
+      <div class="button">
+        <button id="submit" type="submit">Apply and Save</button>
+        <div class="tooltip">Cmd/Ctrl+Enter</div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="radar-chart-dialog.js"></script>
+</body>
+</html>

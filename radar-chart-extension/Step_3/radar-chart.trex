@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest manifest-version="0.1" xmlns="http://www.tableau.com/xml/extension_manifest">
+  <worksheet-extension id="com.tableau.extension.radar-chart" extension-version="1.0.0">
+    <default-locale>en_US</default-locale>
+    <name>Radar Chart v3</name>
+    <description>Radar Chart v1.0</description>
+    <author name="Pavel Semenov" email="pavel.semenov@exness.com" organization="Exness" website="https://www.exness.com"/>
+    <min-api-version>1.11</min-api-version>
+    <source-location>
+      <url>http://localhost:8080/Step_3/radar-chart.html</url>
+    </source-location>
+    <icon/>
+    <encoding id="axes">
+      <display-name>Axes</display-name>
+      <fields max-count="1"/>
+      <encoding-icon token="text" />
+    </encoding>
+    <encoding id="values">
+      <display-name>Values</display-name>
+      <role-spec>
+        <role-type>continuous-measure</role-type>
+        <role-type>continuous-dimension</role-type>
+      </role-spec>
+      <fields max-count="1"/>
+      <encoding-icon token="size" />
+    </encoding>
+  </worksheet-extension>
+</manifest>
